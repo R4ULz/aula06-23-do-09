@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
+        .form {
+            position: relative;
+            bottom: 1590px;
+            left: 800px;
+        }
     </style>
 </head>
+
 <body>
     <div class="imagens">
         <h2>criando imagens</h2>
         <!-- Imagem local-->
-        <img width="250px" height="250px" src="img/MV5BMjAzOTE2MzM4OV5BMl5BanBnXkFtZTcwNTgzMDUzMw@@._V1_.jpg" alt="ABELHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
-        <img class="inut" width="250px" height="250px" src="https://www.imago-images.com/bild/st/0097829882/s.jpg" alt="MOSQUITOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO">
+        <img width="250px" height="250px" src="img/MV5BMjAzOTE2MzM4OV5BMl5BanBnXkFtZTcwNTgzMDUzMw@@._V1_.jpg"
+            alt="ABELHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+        <img class="inut" width="250px" height="250px" src="https://www.imago-images.com/bild/st/0097829882/s.jpg"
+            alt="MOSQUITOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO">
     </div>
     <div class="audio">
         <h2>criando um audio</h2>
@@ -24,16 +33,16 @@
             <source src="audio/oooh-my-god-vine-mp3cut.mp3">
         </audio>
     </div>
-    <div video>
+    <!--<div video>
         <h2>criando um video</h2>
         <video controls>
             <source width="250px" src="video/Gato engraçado do _Gato de Botas_.mp4">
         </video>
-    </div>
+    </div>-->
     <div>
         <h2>criando iframe</h2>
         <iframe width="500px" height="500px" src="https://www.myinstants.com/pt/index/br/" frameborder="20"></iframe>
-    </div>   
+    </div>
     <div>
         <h2>Criando uma tabela</h2>
         <table>
@@ -43,16 +52,16 @@
                     <th>Idade</th>
                 </tr>
             </thead>
-        <tbody>
-            <tr>
-                <td>Maria</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Luciano</td>
-                <td>15</td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Luciano</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
         </table>
         <tfoot>
             <tr>
@@ -85,14 +94,53 @@
             <li>Inglaterra</li>
         </ul>
     </div>
-    <div>
+    <div class="form">
         <h2>criando um form</h2>
-        <form action="#">
-            <label for="">Nome: </label><br>
-            <input type="text" name="nome" id="nome">
+        <form action="#" method="post">
+            <label>Nome: </label><br>
+            <input type="text" name="nome_completo" id="nome_completo"><br>
+            <label>E-mail</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label>Senha</label><br>
+            <input type="password"><br>
+            <label >Data nascimento</label><br>
+            <input type="date" name="" id=""><br>
+            <label >CPF</label><br>
+            <input type="number" name="" id=""><br>
+            <label >Sexo</label><br>
+            <input type="radio" value="Masculino" name="radio_sexo" id="radio_sexo_masc">
+            <input type="radio" value="Feminino" name="radio_sexo" id="radio_sexo_fem">
+            <input type="radio" value="Indefinido" name="radio_sexo" id="radio_sexo_ind"><br>
 
+            <label>Minha cor favorita</label><br>
+            <input type="color" name="cor_aluno" id="cor_aluno"><br>
+
+            <label>Minhas linguagens favoritas</label><br>
+            <select id="linguagem_favorita" multiple>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="JS">JavaScript</option>
+            </select><br>
+            
+            <label>Meus idiomas favoritos</label><br>
+            <select id="idioma_favorito"><br>
+                <option value="Portugues">Português</option>
+                <option value="Ingles">Inglês</option>
+                <option value="japones">Japonês</option>
+                <option value="espanhol">Espanhol</option>
+            </select> <br>
+            
+            <label>Comentário</label><br>
+            <textarea name="comentario_aluno" id="comentario_aluno" rows="10"></textarea><br>
+
+            <label>Aceita os termos</label>
+            <input type="checkbox" name="aceite" id="aceite" required><br>
+
+            <input type="submit" id="aceitar" value="Aceitar">
         </form>
     </div>
 
 </body>
+
 </html>
