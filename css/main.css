@@ -1,0 +1,18 @@
+:root{
+    --cor-fonte: coral;
+    --tamanho-fonte: 20px;
+
+}
+.cabecudo{
+    display: flex;
+    list-style: none;''
+}
+.cabecudo li a{
+    margin: 20px;
+    font-size: var(--tamanho-fonte); 
+    display: inline-block; 
+    color: var(--cor-fonte); 
+    text-decoration: none; 
+    border-bottom:3px solid #EDEDED; 
+
+}
